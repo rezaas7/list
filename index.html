@@ -2,14 +2,14 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <title>جستجوی پایگاه </title>
+  <title>جستجوی پایگاه دارویی</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <h2>🔍 جستجو </h2>
+    <h2>🔍 جستجوی پایگاه دارویی</h2>
     <div class="search-box">
       <input type="text" id="searchInput" placeholder="نام پایگاه را وارد کنید..." oninput="liveSearch()" />
       <button onclick="clearInput()">🧹 پاک کردن</button>
@@ -17,6 +17,11 @@
     <ul id="suggestions"></ul>
     <div id="statusBox"></div>
   </div>
+
+  <footer class="footer">
+    <p>طراح و توسعه‌دهنده وب: <strong>رضا آسال</strong></p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
