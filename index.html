@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>جستجوی پایگاه دارویی</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>🔍جستجوی پایگاه دارویی</h2>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="نام پایگاه را وارد کنید..." oninput="liveSearch()" />
+      <button onclick="clearInput()">🧹 پاک کردن</button>
+    </div>
+    <ul id="suggestions"></ul>
+    <div id="statusBox"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
